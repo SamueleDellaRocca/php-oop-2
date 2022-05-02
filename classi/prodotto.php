@@ -10,7 +10,7 @@ class Prodotto
         return $this->marca;
     }
 
-    public function setMarca($marca)
+    public function setMarca(string $marca)
     {
         $this->marca = $marca;
 
@@ -22,7 +22,7 @@ class Prodotto
         return $this->prezzo;
     }
 
-    public function setPrezzo($prezzo)
+    public function setPrezzo(int $prezzo)
     {
         $this->prezzo = $prezzo;
 
