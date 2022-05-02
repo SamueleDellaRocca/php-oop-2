@@ -20,7 +20,7 @@ class Gioco extends Prodotto
         return $this->tipoGioco;
     }
 
-    public function setTipoGioco($tipoGioco)
+    public function setTipoGioco(string $tipoGioco)
     {
         $this->tipoGioco = $tipoGioco;
 
