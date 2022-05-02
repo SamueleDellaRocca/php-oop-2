@@ -58,7 +58,7 @@ class Utente
     public function controlloScadenza($scadenzaCartaCredito)
     {
         if (strtotime($scadenzaCartaCredito) < strtotime('now')) {
-            echo ("<h2>La tua carta di credito è scaduta</h2>");
+            echo ("<h2>La tua carta di credito è scaduta il {$scadenzaCartaCredito}</h2>");
         } else {
             echo ("<h2>La tua carta di credito è valida</h2>");
         }
