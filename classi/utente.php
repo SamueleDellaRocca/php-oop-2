@@ -5,6 +5,7 @@ class Utente
     protected $nomeCompleto;
     protected $email;
     protected $abbonato;
+    protected $scadenzaCartaCredito;
 
     public function getNomeCompleto()
     {
@@ -38,6 +39,18 @@ class Utente
     public function setAbbonato(bool $abbonato)
     {
         $this->abbonato = $abbonato;
+
+        return $this;
+    }
+
+    public function getScadenzaCartaCredito()
+    {
+        return $this->scadenzaCartaCredito;
+    }
+
+    public function setScadenzaCartaCredito(string $scadenzaCartaCredito)
+    {
+        $this->scadenzaCartaCredito = $scadenzaCartaCredito;
 
         return $this;
     }

@@ -5,6 +5,7 @@ include __DIR__ . "/classi/gioco.php";
 include __DIR__ . "/classi/cuccia.php";
 include __DIR__ . "/classi/stagionale.php";
 include __DIR__ . "/classi/abbonato.php";
+include __DIR__ . "/classi/nonregistrato.php";
 
 
 $tonnoScatola = new Cibo("Riomare", 5, "Felini", "In scatola");
@@ -17,8 +18,11 @@ $antiParassitario = new Stagionale("XXX", 10, "Cani e Gatti", "Protettivo", "Est
 
 $utenteUno = new Abbonato("Mario Rossi", "mariorossi@gmail.com", true, "2024-31-12");
 
+$utenteCinque = new NonRegistrato("Francesco Totti", "totti@gmail.com", false, "2025-31-12");
+
 var_dump($tonnoScatola);
 var_dump($pallina);
 var_dump($gabbietta);
 var_dump($antiParassitario);
 var_dump($utenteUno);
+var_dump($utenteCinque);

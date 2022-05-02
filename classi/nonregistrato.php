@@ -2,9 +2,10 @@
 
 include_once __DIR__ . "/utente.php";
 
-class Abbonato extends Utente
+class NonRegistrato extends Utente
 {
-    protected $sconto = 20;
+
+    protected $sconto = 0;
 
     public function __construct(
         $nomeCompleto,
