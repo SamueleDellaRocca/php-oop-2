@@ -1,6 +1,6 @@
 <?php
 
-include __DIR__ . "/prodotto.php";
+include_once __DIR__ . "/prodotto.php";
 
 class Stagionale extends Prodotto
 {
@@ -13,8 +13,8 @@ class Stagionale extends Prodotto
         $this->marca = $marca;
         $this->prezzo = $prezzo;
         $this->tipoAnimale = $tipoAnimale;
-        $this->tipoCuccia = $tipoStagionale;
-        $this->dimensioni = $stagione;
+        $this->tipoStagionale = $tipoStagionale;
+        $this->stagione = $stagione;
     }
 
 

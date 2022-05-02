@@ -1,6 +1,6 @@
 <?php
 
-include __DIR__ . "/prodotto.php";
+include_once __DIR__ . "/prodotto.php";
 
 class Gioco extends Prodotto
 {
@@ -12,7 +12,7 @@ class Gioco extends Prodotto
         $this->marca = $marca;
         $this->prezzo = $prezzo;
         $this->tipoAnimale = $tipoAnimale;
-        $this->tipoCibo = $tipoGioco;
+        $this->tipoGioco = $tipoGioco;
     }
 
     public function getTipoGioco()
