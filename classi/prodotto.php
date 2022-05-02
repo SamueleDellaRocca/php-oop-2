@@ -4,6 +4,7 @@ class Prodotto
 {
     protected $marca;
     protected $prezzo;
+    protected $tipoAnimale;
 
     public function getMarca()
     {
@@ -25,6 +26,18 @@ class Prodotto
     public function setPrezzo(int $prezzo)
     {
         $this->prezzo = $prezzo;
+
+        return $this;
+    }
+
+    public function getTipoAnimale()
+    {
+        return $this->tipoAnimale;
+    }
+
+    public function setTipoAnimale($tipoAnimale)
+    {
+        $this->tipoAnimale = $tipoAnimale;
 
         return $this;
     }

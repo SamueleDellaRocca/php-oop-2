@@ -4,7 +4,6 @@ include __DIR__ . "/prodotto.php";
 
 class Cibo extends Prodotto
 {
-    protected $tipoAnimale;
     protected $tipoCibo;
 
     public function __construct($marca, $prezzo, $tipoAnimale, $tipoCibo)
@@ -13,18 +12,6 @@ class Cibo extends Prodotto
         $this->prezzo = $prezzo;
         $this->tipoAnimale = $tipoAnimale;
         $this->tipoCibo = $tipoCibo;
-    }
-
-    public function getTipoAnimale()
-    {
-        return $this->tipoAnimale;
-    }
-
-    public function setTipoAnimale(string $tipoAnimale)
-    {
-        $this->tipoAnimale = $tipoAnimale;
-
-        return $this;
     }
 
     public function getTipoCibo()
