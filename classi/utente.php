@@ -2,10 +2,10 @@
 
 class Utente
 {
-    protected $nomeCompleto;
-    protected $email;
-    protected $abbonato;
-    protected $scadenzaCartaCredito;
+    private $nomeCompleto;
+    private $email;
+    private $abbonato;
+    private $scadenzaCartaCredito;
 
     public function getNomeCompleto()
     {
@@ -53,5 +53,14 @@ class Utente
         $this->scadenzaCartaCredito = $scadenzaCartaCredito;
 
         return $this;
+    }
+
+    public function controlloScadenza($scadenzaCartaCredito)
+    {
+        if (strtotime($scadenzaCartaCredito) < strtotime('now')) {
+            echo ("<h2>La tua carta di credito è scaduta</h2>");
+        } else {
+            echo ("<h2>La tua carta di credito è valida</h2>");
+        }
     }
 }

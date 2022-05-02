@@ -4,7 +4,7 @@ include_once __DIR__ . "/utente.php";
 
 class Abbonato extends Utente
 {
-    protected $sconto = 20;
+    private $sconto = 20;
 
     public function __construct(
         $nomeCompleto,
