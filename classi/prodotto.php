@@ -25,7 +25,7 @@ class Prodotto
 
     public function setPrezzo(int $prezzo)
     {
-        return $this->prezzo = $prezzo;
+        $this->prezzo = $prezzo;
 
         return $this;
     }

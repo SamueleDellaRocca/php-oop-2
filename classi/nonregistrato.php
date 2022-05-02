@@ -5,7 +5,7 @@ include_once __DIR__ . "/utente.php";
 class NonRegistrato extends Utente
 {
 
-    private $sconto = 0;
+    public $sconto = 0;
 
     public function __construct(
         $nomeCompleto,

@@ -27,5 +27,7 @@ var_dump($gabbietta);
 var_dump($antiParassitario);
 var_dump($utenteUno);
 $utenteUno->controlloScadenza($utenteUno->scadenzaCartaCredito);
+echo ("<h3>{$utenteUno->nomeCompleto} il tuo sconto sugli acquisti è del {$utenteUno->sconto}%</h3>");
 var_dump($utenteCinque);
 $utenteCinque->controlloScadenza($utenteCinque->scadenzaCartaCredito);
+echo ("<h3>{$utenteCinque->nomeCompleto} il tuo sconto sugli acquisti è del {$utenteCinque->sconto}%</h3>");
