@@ -17,6 +17,7 @@ class NonRegistrato extends Utente
         $this->email = $email;
         $this->abbonato = $abbonato;
         $this->scadenzaCartaCredito = $scadenzaCartaCredito;
+        $this->controlloScadenza($this->scadenzaCartaCredito);
     }
 
     public function getSconto()
